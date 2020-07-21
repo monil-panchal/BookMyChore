@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Booking Related Query"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/expandableview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv0"
+        tools:context=".ui.home.help.Faq_activity"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableview"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Payment related query"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/expandableview0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        tools:context=".ui.home.help.Faq_activity"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/tv02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableview0"
+        android:layout_marginTop="20dp"
+        android:text="Still have question?"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_user_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold" />
+
+    <Button
+        android:id="@+id/btn_submit_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Ask your question"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
+</RelativeLayout>
+
+

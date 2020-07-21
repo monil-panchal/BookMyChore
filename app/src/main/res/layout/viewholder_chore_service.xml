@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ViewHolderChoreServiceBinding" />
+
+    <LinearLayout
+        android:id="@+id/serviceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="false"
+        android:animationCache="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgServiceIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin_half"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</layout>
